@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>COunterApp</title>
+</head>
+
+<body class="bg-gray-900">
+    <header class="w-full h-56">
+        <nav class="w-full h-20 bg-gray-200 flex flex-row gap-5 items-center justify-between px-6 drop-shadow-md">
+            <div class="">
+                <a class="font-bold text-2xl sm:text-4xl" href="">Counter App</a>
+            </div>
+            <div>
+                <a class="font-normal text-2xl sm:text-4xl" href="">Simple Counter</a>
+            </div>
+        </nav>
+    </header>
+    <main class="w-full h-32 flex flex-col items-center">
+        <div id="wrapperInfo"
+            class="bg-gray-900 w-auto px-8 py-6 h-auto border border-gray-400 rounded-xl flex flex-col items-center justify-center transition-all duration-100 ease-in">
+            <h1 class="text-6xl font-bold text-center text-gray-200 sm:text-8xl">
+                Counter
+            </h1>
+            <span id="valueCounter" class="pt-6 text-7xl font-bold text-center text-gray-200 sm:text-9xl">
+                0
+            </span>
+        </div>
+        <div class="mt-10 flex flex-col gap-10 sm:flex-row">
+            <button id="btnDecrease"
+                class="btn px-6 py-4 rounded-lg text-gray-700 bg-red-300 font-bold text-2xl sm:text-3xl transition-all duration-100 ease-in hover:bg-red-400">Decrease</button>
+
+            <button id="btnReset"
+                class="btn px-6 py-4 border border-gray-400 rounded-lg text-gray-400 bg-transparent font-bold text-2xl sm:text-3xl transition-all duration-100 ease-in hover:border-gray-300 hover:text-gray-200">Reset</button>
+
+            <button id="btnIncrease"
+                class="btn px-6 py-4 rounded-lg text-gray-700 bg-green-300 font-bold text-2xl sm:text-3xl transition-all duration-100 ease-in hover:bg-green-400">Increase</button>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+
+</html>
